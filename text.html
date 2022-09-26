@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#6E5C1A">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Unknown Yard</title>
-
-  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="src/css/plugins.css">
+  <link rel="stylesheet" href="src/css/style.css">
 
 </head>
 
@@ -278,133 +278,9 @@
 
       </footer>
 
-      <div class="modal fade" id="orderRoom" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <form action="#" class="modal-content">
-            <h3 class="modal-title text-center">Бронювання</h3>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-body modal-border">
-              <div class="container">
-                <div class="row gx-2 gy-2 align-items-end">
-                  <div class="col-12">
-                    <div class="modal-title text-center small">
-                      Стандарт Сингл
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="wrap-input user">
-                      <label class="label">Гости</label>
-                      <div class="number-person user">
-                        <button class="number-person-minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
-                        <input type="number" min="1" value="1" max="2" readonly>
-                        <button class="number-person-plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="wrap-input user">
-                      <label class="label">Сніданок</label>
-                      <div class="number-person user">
-                        <button class="number-person-minus countPerson" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
-                        <input type="number" min="1" value="1" max="2" readonly>
-                        <button class="number-person-plus countPerson" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!--						<div class="col-6">-->
-                  <!--							<div class="wrap-input select-site w-100">-->
-                  <!--								<label>Дети</label>-->
-                  <!--								<select class="select">-->
-                  <!--									<option>Без дітей</option>-->
-                  <!--									<option>до 5-ти</option>-->
-                  <!--									<option>5-12 років </option>-->
-                  <!--								</select>-->
-                  <!--							</div>-->
-                  <!--						</div>-->
-                  <!--						<div class="col-12">-->
-                  <!--							<div class="wrap-input select-site w-100">-->
-                  <!--								<label>Питания</label>-->
-                  <!--								<select class="select">-->
-                  <!--									<option value="Без питания">Без питания</option>-->
-                  <!--									<option value="Завтрак">Завтрак</option>-->
-                  <!--								</select>-->
-                  <!--							</div>-->
-                  <!--						</div>-->
-                  <div class="col-12">
-                    <div class="wrap-input w-100">
-                      <label class="mb-2">Додаткові послуги</label>
-                      <label class="checkbox-site">
-                        <input type="checkbox">
-                        <span class="checkbox-site_icon"></span>
-                        <span class="checkbox-site_label">Додаткове спальне місце <span class="prise">(650грн)</span>
-                        </span>
-                      </label>
-                      <label class="checkbox-site">
-                        <input type="checkbox">
-                        <span class="checkbox-site_icon"></span>
-                        <span class="checkbox-site_label">Ранний заезд з 6.00 до 11.00 <span class="prise">(30грн)</span>
-                        </span>
-                      </label>
-                      <label class="checkbox-site">
-                        <input type="checkbox">
-                        <span class="checkbox-site_icon"></span>
-                        <span class="checkbox-site_label">Поздний выезд з 12.00 до 18.00 <span class="prise">(30грн)</span>
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="wrap-input">
-                      <label class="label">Дата приезда</label>
-                      <input type="text" class="input-site" required>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="wrap-input">
-                      <label class="label">Дата выезда</label>
-                      <input type="text" class="input-site" required>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="wrap-input">
-                      <label class="label">Имя</label>
-                      <input type="text" class="input-site" required>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="wrap-input">
-                      <label class="label">Email</label>
-                      <input type="email" class="input-site" required>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="wrap-input">
-                      <label class="label">Телефон</label>
-                      <input type="tel" class="input-site" required>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="wrap-input">
-                      <label class="label">Комментарий</label>
-                      <textarea class="input-site"></textarea>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="wrap-input select-site w-100">
-                      <label>Оплатить</label>
-                      <select class="select">
-                        <option>Наличные</option>
-                        <option>PayPal</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-          </form>
-        </div>
-      </div>
+
+
 
       <script src="js/main.min.js" defer></script>
 

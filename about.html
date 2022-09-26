@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#6E5C1A">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Unknown Yard</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 
   <link rel="stylesheet" href="css/styles.min.css">
 
@@ -293,6 +294,7 @@
               </div>
             </div>
           </section>
+
         </div>
 
       </main>
@@ -395,133 +397,9 @@
 
       </footer>
 
-      <div class="modal fade" id="orderRoom" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <form action="#" class="modal-content">
-            <h3 class="modal-title text-center">Бронювання</h3>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-body modal-border">
-              <div class="container">
-                <div class="row gx-2 gy-2 align-items-end">
-                  <div class="col-12">
-                    <div class="modal-title text-center small">
-                      Стандарт Сингл
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="wrap-input user">
-                      <label class="label">Гости</label>
-                      <div class="number-person user">
-                        <button class="number-person-minus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
-                        <input type="number" min="1" value="1" max="2" readonly>
-                        <button class="number-person-plus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="wrap-input user">
-                      <label class="label">Сніданок</label>
-                      <div class="number-person user">
-                        <button class="number-person-minus countPerson" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
-                        <input type="number" min="1" value="1" max="2" readonly>
-                        <button class="number-person-plus countPerson" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!--						<div class="col-6">-->
-                  <!--							<div class="wrap-input select-site w-100">-->
-                  <!--								<label>Дети</label>-->
-                  <!--								<select class="select">-->
-                  <!--									<option>Без дітей</option>-->
-                  <!--									<option>до 5-ти</option>-->
-                  <!--									<option>5-12 років </option>-->
-                  <!--								</select>-->
-                  <!--							</div>-->
-                  <!--						</div>-->
-                  <!--						<div class="col-12">-->
-                  <!--							<div class="wrap-input select-site w-100">-->
-                  <!--								<label>Питания</label>-->
-                  <!--								<select class="select">-->
-                  <!--									<option value="Без питания">Без питания</option>-->
-                  <!--									<option value="Завтрак">Завтрак</option>-->
-                  <!--								</select>-->
-                  <!--							</div>-->
-                  <!--						</div>-->
-                  <div class="col-12">
-                    <div class="wrap-input w-100">
-                      <label class="mb-2">Додаткові послуги</label>
-                      <label class="checkbox-site">
-                        <input type="checkbox">
-                        <span class="checkbox-site_icon"></span>
-                        <span class="checkbox-site_label">Додаткове спальне місце <span class="prise">(650грн)</span>
-                        </span>
-                      </label>
-                      <label class="checkbox-site">
-                        <input type="checkbox">
-                        <span class="checkbox-site_icon"></span>
-                        <span class="checkbox-site_label">Ранний заезд з 6.00 до 11.00 <span class="prise">(30грн)</span>
-                        </span>
-                      </label>
-                      <label class="checkbox-site">
-                        <input type="checkbox">
-                        <span class="checkbox-site_icon"></span>
-                        <span class="checkbox-site_label">Поздний выезд з 12.00 до 18.00 <span class="prise">(30грн)</span>
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="wrap-input">
-                      <label class="label">Дата приезда</label>
-                      <input type="text" class="input-site" required>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="wrap-input">
-                      <label class="label">Дата выезда</label>
-                      <input type="text" class="input-site" required>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="wrap-input">
-                      <label class="label">Имя</label>
-                      <input type="text" class="input-site" required>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="wrap-input">
-                      <label class="label">Email</label>
-                      <input type="email" class="input-site" required>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="wrap-input">
-                      <label class="label">Телефон</label>
-                      <input type="tel" class="input-site" required>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="wrap-input">
-                      <label class="label">Комментарий</label>
-                      <textarea class="input-site"></textarea>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="wrap-input select-site w-100">
-                      <label>Оплатить</label>
-                      <select class="select">
-                        <option>Наличные</option>
-                        <option>PayPal</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-          </form>
-        </div>
-      </div>
+
+
 
       <script src="js/main.min.js" defer></script>
 
@@ -530,4 +408,91 @@
 
 </html>
 </div>
+</div>
+
+<button type="button" class="callBack" data-bs-toggle="modal" data-bs-target="#callBackForm"></button>
+<div class="cookies cookies-visible">
+  <div class="cookies_text">We use cookies to personalize and deliver content. By clicking "Accept" you agree to our terms. View our
+    <a href="#">Privacy Policy</a> for information.
+  </div>
+  <div class="cookies_btn">
+    <a href="#" class="btn-site-2 close-cookies">DENY</a>
+    <a href="#" class="btn-site-2 bgWhite close-cookies">Accept</a>
+  </div>
+</div>
+<div class="modal fade" id="callBackForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <h3 class="modal-title text-center">Apply for club membership</h3>
+      <div class="modal-text">Here at Unknown Yard we invite you to join our Members Club, and why wouldn't you want to become a part of our exclusive scheme?
+        Simply receive an invitation from another associate, and apply. </div>
+      <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <form action="#">
+          <div class="row gy-4">
+            <div class="col-12">
+              <div class="input-wrap">
+                <lalel class="label">Name*</lalel>
+                <input type="text" class="input-site validated">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="input-wrap">
+                <lalel class="label">Phone*</lalel>
+                <input type="tel" class="input-site">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="input-wrap">
+                <lalel class="label">Email*</lalel>
+                <input type="email" class="input-site error-input">
+                <div class="error">This field is required</div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="input-wrap">
+                <lalel class="label">Message*</lalel>
+                <textarea class="input-site" rows="1"></textarea>
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="checkbox-site mt-3">
+                <input type="checkbox" checked>
+                <div class="checkbox-site_icon"></div>
+                <div class="checkbox-site_label">
+                  By completing and sending your data, you agree to the <a href="#">provacy policy</a>.
+                </div>
+              </label>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn-with-arrows mt-2">Send it</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sendModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <h3 class="modal-title text-center">Apply for club membership</h3>
+      <div class="modal-text">Here at Unknown Yard we invite you to join our Members Club, and why wouldn't you want to become a part of our exclusive scheme?
+        Simply receive an invitation from another associate, and apply. </div>
+      <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="wrap-sent-box">
+          <div class="sent-box">
+            <div class="sent-box_img">
+              <img src="images/icons/modal-icon.svg" alt="">
+            </div>
+            <div class="sent-box_title">Your message has
+              <br>been sent!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
