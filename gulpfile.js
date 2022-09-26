@@ -79,7 +79,7 @@ function BrowserSync() {
   browserSync.init({
     server: { baseDir: './' },
     notify: false,
-    // tunnel: 'kaskad' //'write-site-name'
+    // tunnel: 'write-site-name' //
   })
 }
 
