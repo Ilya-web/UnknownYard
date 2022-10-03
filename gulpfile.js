@@ -2,7 +2,7 @@ const developmentBuild = false;
 const bundleCssFileName = 'styles.min.css';
 
 const { src, dest, parallel, series, watch } = require('gulp');
-const sass           = require('gulp-sass');
+const sass           = require('gulp-sass')(require('sass'));
 const browserSync    = require('browser-sync').create();
 const sourcemaps     = require('gulp-sourcemaps');
 const autoprefixer   = require('gulp-autoprefixer');
@@ -10,7 +10,7 @@ const fileinclude    = require('gulp-file-include');
 const replace        = require('gulp-replace');
 //const webpack        = require('webpack');
 const webpackStream  = require('webpack-stream');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin   = require('terser-webpack-plugin');
 const concat         = require('gulp-concat');
 const gulpif         = require('gulp-if');
 const cleanCSS       = require('gulp-clean-css');
@@ -125,23 +125,25 @@ function Scripts() {
             test: /\.(js)$/,
             exclude: /(node_modules)/,
             loader: 'babel-loader',
-            query: {
+            options: {
               presets: ['@babel/env']
             }
           }
         ],
       },
       optimization: {
+        minimize: true,
         minimizer: [
-          new UglifyJsPlugin({
-            uglifyOptions: {
+          new TerserPlugin({
+            terserOptions: {
               output: {
                 comments: false
-              }
-            }
-          })
+              },
+            },
+            extractComments: false
+          }),
         ]
-      },
+      }
     }))
     .pipe(dest('js'))
     .pipe(browserSync.stream())
