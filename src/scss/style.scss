@@ -44,7 +44,7 @@ body{
 .scenery-5 {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -144px;
   z-index: -1;
   user-select: none;
   @include media-breakpoint-down(lg) {
@@ -56,7 +56,7 @@ body{
 .scenery-6 {
   position: absolute;
   left: 0;
-  top: 0;
+  top: -144px;
   z-index: -1;
   user-select: none;
 }
@@ -1112,6 +1112,17 @@ textarea.input-site {
   }
 }
 
+.main {
+  position: relative;
+  .scenery-4 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    user-select: none;
+  }
+}
+
 /****main-section****/
 
 
@@ -1413,14 +1424,6 @@ textarea.input-site {
      user-select: none;
   }
 
-  .scenery-4 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-     user-select: none;
-  }
-
   .h1 {
     margin-bottom: 16px;
   }
@@ -1511,6 +1514,13 @@ textarea.input-site {
 
   &-content {
     position: relative;
+
+    .link-site-arrow {
+      margin-right: 25px;
+      @include media-breakpoint-down(xl) {
+        margin-right: 0;
+      }
+    }
   }
 
   &-box {
@@ -1706,13 +1716,6 @@ textarea.input-site {
 
 .wrap-images {
   position: relative;
-  .scenery-4 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-     user-select: none;
-  }
 
   .scenery-3 {
     position: absolute;
@@ -1734,13 +1737,6 @@ textarea.input-site {
        max-width: 100%;
      }
    }
-  .scenery-4 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    user-select: none;
-  }
 }
 
 /****membership****/
@@ -1874,13 +1870,7 @@ textarea.input-site {
 
   &-items {
     position: relative;
-    .scenery-4 {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      z-index: -1;
-       user-select: none;
-    }
+
     .scenery-3 {
       position: absolute;
       left: 0;
@@ -1897,13 +1887,7 @@ textarea.input-site {
 
 .text-page {
   position: relative;
-  .scenery-4 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    user-select: none;
-  }
+
 }
 
 /****text-page****/
@@ -1917,13 +1901,6 @@ textarea.input-site {
 
   &-box {
     overflow: hidden;
-  }
-  .scenery-4 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    user-select: none;
   }
 
   .scenery-7 {
@@ -2297,9 +2274,15 @@ textarea.input-site {
     }
   }
 
+  .social {
+    svg path{
+      fill: $color-accent;
+    }
+  }
+
   &_icon {
     position: absolute;
-    top: 50px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     @include media-breakpoint-down(lg) {
