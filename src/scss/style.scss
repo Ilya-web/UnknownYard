@@ -2611,6 +2611,11 @@ textarea.input-site {
 .form-box{
   position: relative;
   $this: &;
+
+  .checkbox-site {
+    margin-top: 24px;
+  }
+
   &#{$this}-submitted {
     .wrap-sent-box {
       visibility: visible;

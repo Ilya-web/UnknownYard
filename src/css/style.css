@@ -14795,6 +14795,9 @@ textarea.input-site {
 .form-box {
   position: relative;
 }
+.form-box .checkbox-site {
+  margin-top: 24px;
+}
 .form-box.form-box-submitted .wrap-sent-box {
   visibility: visible;
   opacity: 1;
