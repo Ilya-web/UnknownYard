@@ -1,0 +1,66 @@
+
+
+  <header class="header header-fixed static">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-4 col-md-5 d-flex align-items-center">
+          <button type="button" class="toggle-menu">
+            <div class="toggle-menu-box">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+
+          <div class="header-lang">
+            <select class="select">
+              <option>ENG</option>
+              <option>De</option>
+            </select>
+          </div>
+
+        </div>
+        <div class="col-4 col-md-2">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/Unknown-Yard.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="col-4 col-md-5 text-end text-uppercase">
+          <a href="#" class="myProfile">my profile</a>
+        </div>
+      </div>
+    </div>
+    <div class="header_menu">
+      <div class="overlay">
+       <div class="overlay_content">
+         <div class="header_menu__content">
+           <div class="container">
+             <div class="row">
+               <div class="col-12">
+                 <ul class="header_menu__list">
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="membership.html">Membership</a></li>
+                   <li><a href="discretion.html">Discretion</a></li>
+                   <li><a href="Facilities-Highlight.html">Facilities/Highlights</a></li>
+                   <li><a href="blog.html">Blog</a></li>
+                 </ul>
+                 <div class="header-lang-mobile">
+                   <select class="select">
+                     <option>ENG</option>
+                     <option>De</option>
+                   </select>
+                 </div>
+                 @@include('_social.html')
+               </div>
+             </div>
+           </div>
+         </div>
+         @@loop('_maskWave.html', [
+         {'positionClass':'maskWave-bottom'}
+         ])
+       </div>
+      </div>
+    </div>
+  </header>

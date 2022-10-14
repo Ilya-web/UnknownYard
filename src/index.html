@@ -1,0 +1,394 @@
+@@include('_head.html')
+
+@@include('_header.html')
+
+<div class="wrapper" id="wrapper">
+  <div class="content" id="content">
+
+    <main class="main">
+      <div class="scenery-5">
+        <img src="images/scenery/img-5.jpg" alt="">
+      </div>
+      <div class="scenery-6">
+        <img src="images/scenery/img-4.jpg" alt="">
+      </div>
+
+      <section class="main-section mb-150">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="h1 text-center text-uppercase mb-3">Escaping the city
+                without leaving the city</h1>
+            </div>
+            <div class="col-12 col-md-5 m-auto text-center">
+              <p>We welcome couples looking to escape the hustle and
+                bustle of Berlin… to reconnect, to relax and
+                to take rare time to enjoy one another.</p>
+            </div>
+          </div>
+        </div>
+        @@loop('_imageMask.html', [
+        {'urlImage':'images/main-img.jpg'}
+        ])
+      </section>
+
+      <section class="about mb-150" id="firstSection">
+        <div class="scenery-7">
+          <img src="images/scenery/img-7.jpg" alt="">
+        </div>
+        <div class="scenery-8">
+          <img src="images/scenery/img-8.jpg" alt="">
+        </div>
+        <div class="container">
+          <div class="about-top">
+            <div class="row">
+              <div class="col-11 offset-1 col-sm-7 ms-auto">
+                <h2 class="h1 text-uppercase mb-3">About</h2>
+                <div class="about_subTitle subTitle text-uppercase mb-80">
+                  Unknown Yard: a small and cosy boutique hotel nestled on a secluded street of Berlin
+                </div>
+                <div class="imgWrap">
+                  <div class="animateImg">
+                    <img src="images/about/img-1.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-top_img">
+              <img src="images/scenery/img-1.jpg" class="scenery1" alt="">
+              <img src="images/about/img-2.jpg" class="about-top_img__content" alt="">
+            </div>
+          </div>
+          <hr>
+          <div class="about-bottom">
+            <div class="row">
+              <div class="col-11 offset-1 col-sm-7 ms-auto">
+                <p>An intimate location, where privacy is our priority. Mute the madness and enjoy one another for just a few hours, or settle down together for a night in one of our 11 restful rooms</p>
+                <br>
+                <p>Take a break from the rush of the city centre to refuel, reset and revitalise in our small spa, lounge area, summer time terrace or cafe, or simply shut yourselves away in ultimate secrecy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-150">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-8 m-auto">
+              <div class="scenery-1 mb-3">
+                <img src="images/scenery/img-2.svg" class="m-auto" alt="">
+              </div>
+              <div class="h2 text-center text-uppercase mb-1 mb-sm-0">Shhhh</div>
+              <div class="subTitle text-center text-uppercase">don't spill Berlin’s best kept secret, keep it for yourself</div>
+            </div>
+          </div></div>
+      </section>
+
+      <section class="membership mb-150">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="h1 text-uppercase text-center mb-3">Membership</h2>
+            </div>
+            <div class="col-12 col-md-6 m-auto text-center">
+              <div class="membership_text">
+                <p>Here at Unknown Yard we invite you to join our Members Club, and
+                  why wouldn’t you want to become a part of our exclusive scheme?</p>
+                <br>
+                <p>We pride ourselves on absolute discretion and privacy
+                  for every one of our members. And in return, we ask you to follow
+                  a few rules to ensure your stay is as peaceful as possible.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-80">
+            <div class="col-12 col-lg-4 d-flex">
+              <div class="membership_imgs">
+                <div class="membership_img-1">
+                  <img src="images/membership/img-1.jpg" alt="">
+                </div>
+                <div class="membership_img-2">
+                  <img src="images/membership/img-2.jpg" alt="">
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-lg-7 offset-lg-1">
+              @@include('_number-list.html')
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 text-center m-auto">
+              The membership committee ensures the rules are adhered to at all times. They have sole discretion as to who is accepted into the membership scheme.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info mb-80">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="info_box text-center">
+                <div class="info_content">
+                  <div class="info_content__title h3 text-uppercase">Discretion</div>
+                  <div class="info_content__text">We endeavour to have you check-out as the most relaxed version of yourselves.
+                    That’s why for us your privacy is paramount. We have a list of rules that we insist are followed, whilst our promise to you is that absolute discretion is maintained throughout
+                    your stay. Please see our Membership page for more details.</div>
+                  <div class="info_content__link">
+                    <a href="#" class="link-site">go Membership</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="facilities mb-150">
+        @@include('_scenery-3.html')
+        @@include('_scenery-4.html')
+        <div class="container">
+          <div class="row">
+            <div class="col-11 offset-lg-1">
+              <h2 class="h1 text-uppercase">Facilities &</h2>
+            </div>
+            <div class="col-11 offset-1 col-md-7 offset-md-5">
+              <h2 class="h1 text-uppercase">Highlights</h2>
+            </div>
+          </div>
+          <div class="row position-relative">
+            <div class="scenery-2">
+              <img src="images/scenery/img-2.jpg" alt="" data-speed="2">
+            </div>
+            <div class="col-11 offset-1 col-md-7 offset-md-5">
+              <div class="col-12 col-lg-7">
+                <div class="facilities_text">
+                  Upon arrival to Unknown Yard we are sure that you will want to close yourselves away within the privacy of one of our eleven undisturbed rooms. Yet you can’t ignore the fact that we are more than just a boutique hotel.
+                  Our other facilities include an exclusive spa, lounge, summertime terrace and a quiet cafe serving exceptional coffee.
+                </div>
+              </div>
+              <div class="facilities_desc subTitle">
+                We invite you to extend your stay, enhance your zen and experience our other amenities...
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-lg-5">
+              <nav>
+                <div class="nav facilities-nav" role="tablist">
+                  <button class="facilities-nav_link active h2" id="cafe-tab" data-bs-toggle="tab" data-bs-target="#cafe" type="button" role="tab" aria-controls="cafe" aria-selected="true">Cafe</button>
+                  <button class="facilities-nav_link h2" id="spa-tab" data-bs-toggle="tab" data-bs-target="#spa" type="button" role="tab" aria-controls="spa" aria-selected="false">Spa</button>
+                  <button class="facilities-nav_link h2" id="terrace-tab" data-bs-toggle="tab" data-bs-target="#terrace" type="button" role="tab" aria-controls="terrace" aria-selected="false">Terrace</button>
+                  <button class="facilities-nav_link h2" id="rooms-tab" data-bs-toggle="tab" data-bs-target="#rooms" type="button" role="tab" aria-controls="rooms" aria-selected="false">Rooms</button>
+                </div>
+              </nav>
+            </div>
+            <div class="col-12 col-lg-7">
+              <div class="facilities-content tab-content">
+                <div class="facilities-pane tab-pane fade show active" id="cafe" role="tabpanel" aria-labelledby="cafe-tab">
+                  <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-4">
+                      <div class="facilities-box">
+                        <div class="imgWrap facilities-box_img">
+                          <div class="animateImg">
+                            <img src="images/facilities/img-1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-4">
+                            <div class="facilities-box_title">Opening times</div>
+                          </div>
+                          <div class="col-8">
+                            <div class="facilities-box_text">Refuel in our on-site cafe. Whether you’re a morning, noon or evening coffee-consumer, our cafe will provide you with exceptional coffee.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row align-items-center justify-content-between">
+                    <div class="col-4">
+                      <div class="imgWrap facilities_imgSmall">
+                        <div class="animateImg">
+                          <img src="images/facilities/img-2.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <a href="#" class="link-site-arrow">
+                        read more
+                        <span class="link-site-arrow_icon"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="facilities-pane tab-pane fade" id="spa" role="tabpanel" aria-labelledby="spa-tab">
+                  <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-4">
+                      <div class="facilities-box">
+                        <div class="imgWrap facilities-box_img">
+                          <div class="animateImg">
+                            <img src="images/facilities/img-1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-4">
+                            <div class="facilities-box_title">Opening times</div>
+                          </div>
+                          <div class="col-8">
+                            <div class="facilities-box_text">Refuel in our on-site cafe. Whether you’re a morning, noon or evening coffee-consumer, our cafe will provide you with exceptional coffee.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row align-items-center justify-content-between">
+                    <div class="col-4">
+                      <div class="imgWrap facilities_imgSmall">
+                        <div class="animateImg">
+                          <img src="images/facilities/img-2.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <a href="#" class="link-site-arrow">
+                        read more
+                        <svg viewBox="0 0 90 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="circle" cx="45" cy="46" r="44.5" stroke="#A0862F" />
+                          <circle cx="45.5" cy="1.5" r="1.5" fill="#A0862F"/>
+                          <ellipse cx="45.5" cy="90.5331" rx="1.5" ry="1.46667" fill="#A0862F"/>
+
+                          <g class="arrow">
+                            <line x1="17.5" y1="45.9998" x2="72.5" y2="45.9998" stroke="#A0862F" stroke-linecap="round"/>
+                            <path d="M61.334 57.6663L73.0007 45.9996L61.334 34.3329" stroke="#A0862F" stroke-linecap="round"/>
+                            <path d="M47.334 51.8333L53.1673 45.9999L47.334 40.1666" stroke="#A0862F" stroke-linecap="round"/>
+                            <path d="M66 59.9998L66 52.9168L58.9171 52.9168" stroke="#A0862F" stroke-linecap="round"/>
+                            <path d="M66 31.9998L66 39.0827L58.9171 39.0827" stroke="#A0862F" stroke-linecap="round"/>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="facilities-pane tab-pane fade" id="terrace" role="tabpanel" aria-labelledby="terrace-tab">
+                  <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-4">
+                      <div class="facilities-box">
+                        <div class="imgWrap facilities-box_img">
+                          <div class="animateImg">
+                            <img src="images/facilities/img-1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-4">
+                            <div class="facilities-box_title">Opening times</div>
+                          </div>
+                          <div class="col-8">
+                            <div class="facilities-box_text">Refuel in our on-site cafe. Whether you’re a morning, noon or evening coffee-consumer, our cafe will provide you with exceptional coffee.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row align-items-center justify-content-between">
+                    <div class="col-4">
+                      <div class="imgWrap facilities_imgSmall">
+                        <div class="animateImg">
+                          <img src="images/facilities/img-2.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <a href="#" class="link-site-arrow">
+                        read more
+                        <svg viewBox="0 0 90 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="circle" cx="45" cy="46" r="44.5" stroke="#A0862F" />
+                          <circle cx="45.5" cy="1.5" r="1.5" fill="#A0862F"/>
+                          <ellipse cx="45.5" cy="90.5331" rx="1.5" ry="1.46667" fill="#A0862F"/>
+
+                          <g class="arrow">
+                            <line x1="17.5" y1="45.9998" x2="72.5" y2="45.9998" stroke="#A0862F" stroke-linecap="round"/>
+                            <path d="M61.334 57.6663L73.0007 45.9996L61.334 34.3329" stroke="#A0862F" stroke-linecap="round"/>
+                            <path d="M47.334 51.8333L53.1673 45.9999L47.334 40.1666" stroke="#A0862F" stroke-linecap="round"/>
+                            <path d="M66 59.9998L66 52.9168L58.9171 52.9168" stroke="#A0862F" stroke-linecap="round"/>
+                            <path d="M66 31.9998L66 39.0827L58.9171 39.0827" stroke="#A0862F" stroke-linecap="round"/>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="facilities-pane tab-pane fade" id="rooms" role="tabpanel" aria-labelledby="rooms-tab">
+                  <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-4">
+                      <div class="facilities-box">
+                        <div class="imgWrap facilities-box_img">
+                          <div class="animateImg">
+                            <img src="images/facilities/img-1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-4">
+                            <div class="facilities-box_title">Opening times</div>
+                          </div>
+                          <div class="col-8">
+                            <div class="facilities-box_text">Refuel in our on-site cafe. Whether you’re a morning, noon or evening coffee-consumer, our cafe will provide you with exceptional coffee.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row align-items-center justify-content-between">
+                    <div class="col-4">
+                      <div class="imgWrap facilities_imgSmall">
+                        <div class="animateImg">
+                          <img src="images/facilities/img-2.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <a href="#" class="link-site-arrow">
+                        read more
+                        <svg viewBox="0 0 90 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="circle" cx="45" cy="46" r="44.5" stroke="#A0862F" />
+                          <circle cx="45.5" cy="1.5" r="1.5" fill="#A0862F"/>
+                          <ellipse cx="45.5" cy="90.5331" rx="1.5" ry="1.46667" fill="#A0862F"/>
+
+                          <g class="arrow">
+                            <line x1="17.5" y1="45.9998" x2="72.5" y2="45.9998" stroke="#A0862F" stroke-linecap="round"/>
+                            <path d="M61.334 57.6663L73.0007 45.9996L61.334 34.3329" stroke="#A0862F" stroke-linecap="round"/>
+                            <path d="M47.334 51.8333L53.1673 45.9999L47.334 40.1666" stroke="#A0862F" stroke-linecap="round"/>
+                            <path d="M66 59.9998L66 52.9168L58.9171 52.9168" stroke="#A0862F" stroke-linecap="round"/>
+                            <path d="M66 31.9998L66 39.0827L58.9171 39.0827" stroke="#A0862F" stroke-linecap="round"/>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      @@include('_formSection.html')
+    </main>
+
+    @@loop('_footer.html', [
+    {'icon':'images/icons/footer-icon.jpg'}
+    ])
+  </div>
+</div>
+
+
+@@include('_callBack.html')
+@@include('_cookies.html')
+@@include('_modal-callBackForm.html')
+@@include('_modal-sendModal.html')
+
+
+

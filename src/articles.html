@@ -1,0 +1,100 @@
+@@include('_head.html')
+@@include('_header.html')
+<div class="wrapper scroll-container" id="wrapper">
+  <div class="content" id="content">
+
+
+    <main class="main">
+      <div class="scenery-5">
+        <img src="images/scenery/img-5.jpg" alt="">
+      </div>
+      <div class="scenery-6">
+        <img src="images/scenery/img-4.jpg" alt="">
+      </div>
+      <section class="main-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="h1 text-center text-uppercase mb-3">Is TikTok’s ‘internal shower’ chia seed water actually healthy?</h1>
+            </div>
+          </div>
+        </div>
+        @@loop('_imageMask.html', [
+        {'urlImage':'images/main-img.jpg'}
+        ])
+      </section>
+
+      <section class="articles mb-150" id="firstSection">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="articles_title text-uppercase">We weigh in on the celebrity-crafted viral drink that claims to help cleanse you in just a few gloopy gulps</div>
+              <hr>
+              <div class="articles_date text-uppercase">Thursday 25 August 2022</div>
+            </div>
+            <div class="col-md-8 m-auto">
+                <div class="content-box">
+                  <p>Kate Moss is thriving in her forties. First, she started her own modelling agency, then she landed a multi-million-dollar deal with Diet Coke, and now there’s the announcement of her very own beauty and wellness brand, Cosmoss.
+                  </p>
+                  <p>The news, which officially dropped on Tuesday, came via a video that captured the 48-year-old British supermodel taking a wild swim in the nude. ‘Follow me to Cosmoss’, says the voice of Moss over the film, glancing back to camera before sinking into the natural waters of a countryside pond.</p>
+                  <p>So far, so cryptic, but it didn’t stop Moss’s bevvy of close celebrity friends from commenting on the post: ‘If it makes your bum look that good, I’m getting some. ❤️’. Said Bella Freud. ‘This is exciting!’ said fellow model, Karen Elson.</p>
+                  <p>Set to officially launch on 1 September, Moss is continuing to drip-feed hints about what to expect on the company’s official Instagram account. ‘Each product has been meticulously crafted with wellbeing in mind; each ritual opens a door to balance, restoration, and love.’ And although the products remain undisclosed, rumours point to fragrances, speciality teas, and gold nectar CBD-infused face oils.</p>
+                  <p>What we do know is that the range will most likely be positioned as a UK rival to Gwyneth Paltrow’s Goop or Kim Kardashian’s Poosh. But unlike those aforementioned wellness czars, Moss’s pedigree is altogether more complex. As the pin-up girl of 1990s grunge, Moss – who famously said: ‘Nothing tastes as good as skinny feels’ – is the ultimate former party girl, meaning she’s not the typical face of a squeaky-clean wellness brand.</p>
+                  <p>That being said, in the 13 years since Moss uttered those infamous words, the Croydon-born fashion icon has begun dipping her toes into the pursuit of self-betterment. She is now sober. She also practices yoga with celebrity teacher, Nadia Narain, and according to The Guardian, has been eating salads and juicing since 2017.</p>
+                  <p>With Cosmoss, Moss is cleverly hoping to bottle her personal – and wider cultural – shift from hedonist to holistic. The brand notes that the line is inspired by ‘Kate’s extraordinary life experiences, her own wellness journey, and her personal transformation’.</p>
+                  <p>Cosmoss will be available to purchase from 1 September via the website here.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-150 articles-items">
+        @@include('_scenery-3.html')
+        @@include('_scenery-4.html')
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="subTitle text-uppercase mb-5 text-uppercase"> Related <br>Articles</div>
+            </div>
+          </div>
+          <div class="row gy-5">
+
+            @@loop('_articles-item.html', [
+            {
+            'imgUrl': 'images/articles/img-1.jpg',
+            'title': "Andrew Tate is banned from social media, but is that enough?",
+            'text': "The toxic TikToker has been removed from most social media channels, but that doesn't mean his message of hate has also disappeared, says Laura Craik",
+            },
+            {
+            'imgUrl': 'images/articles/img-2.jpg',
+            'title': "House Art: Miranda Forrester’s botanical ceiling at Little House Balham",
+            'text': "Made of 32 hand-painted panels, the new mural by the south London artist is Soho House’s biggest art commission to date",
+            },
+            {
+            'imgUrl': 'images/articles/img-3.jpg',
+            'title': "Andrew Tate is banned from social media, but is that enough?",
+            'text': "The toxic TikToker has been removed from most social media channels, but that doesn't mean his message of hate has also disappeared, says Laura Craik",
+            },
+            ])
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    @@loop('_footer.html', [
+    {'icon':'images/icons/footer-icon.jpg'}
+    ])
+  </div>
+</div>
+
+@@include('_callBack.html')
+@@include('_cookies.html')
+@@include('_modal-callBackForm.html')
+@@include('_modal-sendModal.html')
+
+
+
+

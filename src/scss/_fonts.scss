@@ -1,0 +1,12 @@
+@import "mixins";
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap');
+@font-face {
+  font-family: 'Camera W01 Regular';
+  src:
+  url('../../fonts/Camera W01 Regular/Camera W01 Regular.woff2') format('woff2'),
+  url('../../fonts/Camera W01 Regular/Camera W01 Regular.woff') format('woff'),
+  url('../../fonts/Camera W01 Regular/Camera W01 Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

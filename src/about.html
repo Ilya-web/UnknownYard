@@ -1,0 +1,170 @@
+
+@@include('_head.html')
+
+@@include('_header.html')
+<div class="wrapper scroll-container" id="wrapper">
+    <div class="content" id="content">
+
+    <main class="main">
+      <div class="scenery-5">
+        <img src="images/scenery/img-5.jpg" alt="">
+      </div>
+      <div class="scenery-6">
+        <img src="images/scenery/img-4.jpg" alt="">
+      </div>
+
+      <section class="main-section-2">
+        <div class="container">
+          <div class="row position-relative">
+            <div class="scenery-2 d-none d-lg-block">
+              <img src="images/scenery/img-2.jpg" alt="" data-speed="1.3">
+            </div>
+            <div class="col-12 text-center text-uppercase">
+              <div class="subTitle mb-3">About</div>
+              <h1 class="h1 mb-5">Unknown Yard</h1>
+            </div>
+            <div class="col-12 col-md-7 m-auto text-center mb-3">
+              <div class="subTitle">A concept conceived and introduced to a secluded street of Berlin in 2022</div>
+            </div>
+            <div class="col-12 col-md-6 m-auto text-center">
+              <p> Our aim upon creation was to provide locals and international
+                couples with an escape from the city, without leaving the city.</p>
+              <br>
+              <p> Situated in the midst of the metropolis, at the core of German
+                culture, yet barely noticeable from the exterior, it is almost as if
+                this romantic retreat has always been here. The building blends
+                in to Berlin and provides an undisturbed space for guests to
+                mute the madness for a much-needed moment.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-150 mask">
+        <div class="imgWrap mask_img">
+          <div class="animateImg">
+            <img src="images/about/img-3.jpg" alt="">
+          </div>
+        </div>
+        @@include('_toNextSection.html')
+      </section>
+
+      <div class="wrap-images" id="firstSection">
+
+        <div class="scenery-4">
+          <img src="images/scenery/img-1.jpg" alt="">
+        </div>
+        <div class="scenery-3">
+          <img src="images/scenery/img-3.jpg" alt="">
+        </div>
+
+        <section class="allure mb-150">
+          <div class="container">
+            <div class="row mb-80 ">
+              <div class="col-md-11 offset-lg-1">
+                <div class="h1 text-uppercase">The allure of</div>
+              </div>
+              <div class="col-12 col-md-7 offset-md-5 d-flex justify-content-end justify-content-md-start">
+                <div class="h1 text-uppercase">Berlin is</div>
+              </div>
+              <div class="col-12 col-md-10 offset-lg-2 offset-md-1 d-flex justify-content-end justify-content-md-start">
+                <div class="h1 text-uppercase text-break">unquestionable</div>
+              </div>
+            </div>
+
+            <div class="row gy-5">
+              <div class="col-12 col-lg-3 col-md-5 d-flex justify-content-end justify-content-md-start">
+                <div class="allure-terrace">
+                  <div class="imgWrap allure-terrace_img">
+                    <div class="animateImg">
+                      <img src="images/about/img-4.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="allure-terrace_title">Terrace</div>
+                  <div class="allure-terrace_text">Opening times</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-7 offset-lg-2">
+                <p>A city crammed with attractions, art and architecture. The interior of Unknown Yard runs contadictory to the environment in which it stands, and upon inspection, it is just what the city needs.
+                </p>
+                <br>
+                <p>We have succeeded to make our vision a reality and invite you into our safe-space, our zen-filled zone, our romantic retreat…</p>
+                <br>
+                <div class="imgWrap">
+                  <div class="animateImg">
+                    <img src="images/about/img-5.jpg" alt="">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="privacy mb-80">
+          <div class="container h-100">
+            <div class="row h-100">
+              <div class="col-10 col-md-6 mx-auto d-flex align-items-center justify-content-md-center">
+                <img src="images/about/circle-text.svg" class="circle-text m-auto" alt="">
+                <div class="privacy-content">
+                  <div class="privacy-content_img">
+                    <img src="images/scenery/img-6.png" alt="">
+                  </div>
+                  <div class="privacy-content_title h1 text-uppercase">privacy</div>
+                  <div class="privacy-content_text">We offer an overnight stay, or alternatively 3-hour slots in
+                    which you can calm yourselves from the craze of the day,
+                    whilst we maintain our promise to you that privacy is paramount.
+                    Whether you venture no further than your restful room
+                    or you take absolute advantage of our additional facilities,
+                    our team will cater to your needs, or leave you
+                    well alone as you so desire.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-80">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 m-auto text-center">
+                In essence, our ethos is “escaping the city, without leaving the city” and our attentive staff will make every effort to provide you with the break you so deserve, within the confidential confines of our uniquely-furnished hotel.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-150">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-8 m-auto">
+                <div class="h2 text-center text-uppercase">Shhhh</div>
+                <div class="subTitle text-center text-uppercase mb-80">don't spill Berlin’s best kept secret, keep it for yourself</div>
+                <div class="scenery-1">
+                  <img src="images/scenery/img-2.svg" class="m-auto" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        @@include('_formSection.html')
+
+      </div>
+
+    </main>
+
+
+    @@loop('_footer.html', [
+    {'icon':'images/icons/footer-icon.jpg'}
+    ])
+  </div>
+</div>
+
+@@include('_callBack.html')
+@@include('_cookies.html')
+@@include('_modal-callBackForm.html')
+@@include('_modal-sendModal.html')
+
+
+

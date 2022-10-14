@@ -1,0 +1,125 @@
+@@include('_head.html')
+
+@@include('_header.html')
+
+
+<div class="wrapper scroll-container" id="wrapper">
+  <div class="content" id="content">
+
+    <main class="main">
+      <div class="scenery-5">
+        <img src="images/scenery/img-5.jpg" alt="">
+      </div>
+      <div class="scenery-6">
+        <img src="images/scenery/img-4.jpg" alt="">
+      </div>
+
+      <section class="blog mb-150">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="h1 mb-3 text-uppercase text-center">blog: Unknown Yard</h1>
+            </div>
+            <div class="col-12">
+              <div class="blog-items">
+
+                @@loop('_blog-item.html', [
+                {
+                'imgUrl':'images/blog/img-1.jpg',
+                'title':'House Art: Miranda Forrester’s botanical ceiling at Little House Balham',
+                'text':'Made of 32 hand-painted panels, the new mural by the south London artist is Soho House’s biggest art commission to date',
+                },
+                {
+                'imgUrl':'images/blog/img-2.jpg',
+                'title':'Is TikTok’s ‘internal shower’ chia seed water actually healthy?',
+                'text':'We weigh in on the celebrity-crafted viral drink that claims to help cleanse you in just a few gloopy gulps',
+                },
+                {
+                'imgUrl':'images/blog/img-3.jpg',
+                'title':'Andrew Tate is banned from social media, but is that enough?',
+                'text':"The toxic TikToker has been removed from most social media channels, but that doesn't mean his message of hate has also disappeared, says Laura Craik",
+                },
+                {
+                'imgUrl':'images/blog/img-4.jpg',
+                'title':'Is TikTok’s ‘internal shower’ chia seed water actually healthy?',
+                'text':"We weigh in on the celebrity-crafted viral drink that claims to help cleanse you in just a few gloopy gulps",
+                },
+                {
+                'imgUrl':'images/blog/img-6.jpg',
+                'title':'Andrew Tate is banned from social media, but is that enough?',
+                'text':"The toxic TikToker has been removed from most social media channels, but that doesn't mean his message of hate has also disappeared, says Laura Craik",
+                },
+                {
+                'imgUrl':'images/blog/img-5.jpg',
+                'title':'House Art: Miranda Forrester’s botanical ceiling at Little House Balham',
+                'text':"Made of 32 hand-painted panels, the new mural by the south London artist is Soho House’s biggest art commission to date",
+                },
+                {
+                'imgUrl':'images/blog/img-7.jpg',
+                'title':'Andrew Tate is banned from social media, but is that enough?',
+                'text':"The toxic TikToker has been removed from most social media channels, but that doesn't mean his message of hate has also disappeared, says Laura Craik",
+                },
+                {
+                'imgUrl':'images/blog/img-8.jpg',
+                'title':'House Art: Miranda Forrester’s botanical ceiling at Little House Balham',
+                'text':"Made of 32 hand-painted panels, the new mural by the south London artist is Soho House’s biggest art commission to date",
+                },
+                {
+                'imgUrl':'images/blog/img-9.jpg',
+                'title':'Is TikTok’s ‘internal shower’ chia seed water actually healthy?',
+                'text':"We weigh in on the celebrity-crafted viral drink that claims to help cleanse you in just a few gloopy gulps",
+                },
+                {
+                'imgUrl':'images/blog/img-10.jpg',
+                'title':'Is TikTok’s ‘internal shower’ chia seed water actually healthy?',
+                'text':"We weigh in on the celebrity-crafted viral drink that claims to help cleanse you in just a few gloopy gulps",
+                },
+                {
+                'imgUrl':'images/blog/img-11.jpg',
+                'title':'Is TikTok’s ‘internal shower’ chia seed water actually healthy?',
+                'text':"We weigh in on the celebrity-crafted viral drink that claims to help cleanse you in just a few gloopy gulps",
+                },
+                {
+                'imgUrl':'images/blog/img-12.jpg',
+                'title':'Andrew Tate is banned from social media, but is that enough?',
+                'text':"The toxic TikToker has been removed from most social media channels, but that doesn't mean his message of hate has also disappeared, says Laura Craik",
+                },
+                {
+                'imgUrl':'images/blog/img-13.jpg',
+                'title':'Is TikTok’s ‘internal shower’ chia seed water actually healthy?',
+                'text':"We weigh in on the celebrity-crafted viral drink that claims to help cleanse you in just a few gloopy gulps",
+                },
+                {
+                'imgUrl':'images/blog/img-14.jpg',
+                'title':'Andrew Tate is banned from social media, but is that enough?',
+                'text':"The toxic TikToker has been removed from most social media channels, but that doesn't mean his message of hate has also disappeared, says Laura Craik",
+                },
+                ])
+
+              </div>
+
+              <div class="btn-more">
+                <button type="button" class="more"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+    @@loop('_footer.html', [
+    {'icon':'images/icons/footer-icon.jpg'}
+    ])
+  </div>
+</div>
+
+
+@@include('_callBack.html')
+@@include('_cookies.html')
+@@include('_modal-callBackForm.html')
+@@include('_modal-sendModal.html')
+
+
+

@@ -1,0 +1,128 @@
+
+@@include('_head.html')
+
+
+@@include('_header.html')
+<div class="wrapper scroll-container" id="wrapper">
+    <div class="content" id="content">
+
+    <main class="main">
+      <div class="scenery-5">
+        <img src="images/scenery/img-5.jpg" alt="">
+      </div>
+      <div class="scenery-6">
+        <img src="images/scenery/img-4.jpg" alt="">
+      </div>
+      <section class="membership">
+        @@include('_scenery-4.html')
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="subTitle text-center text-uppercase mb-5">Membership</div>
+            </div>
+          </div>
+          <div class="row mb-100">
+            <div class="col-lg-3 d-flex align-items-end order-1 order-lg-0" id="animate-img" data-lag="1">
+              <img src="images/scenery/img-9.jpg" alt="">
+            </div>
+
+            <div class="col-12 col-lg-6 order-0 order-lg-1">
+              <div class="row">
+                <div class="col-6">
+                  <div class="membership_img">
+                    <img src="images/membership/img-3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="membership_desc d-flex flex-column h-100">
+                    <p class="mb-3">Here at Unknown Yard we invite you to join our Members Club, and why wouldn’t you want to become a part of our exclusive scheme? </p>
+                    <p class="mt-auto">Simply receive an invitation from another associate, and apply. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 text-center mb-3">
+              <h1 class="h1 text-uppercase">‘We pride
+                ourselves on absolute discretion and privacy for every one of our members’</h1>
+            </div>
+            <div class="col-md-6 m-auto text-center">
+              <p> And in return, we ask you to follow a few rules to ensure your stay
+                is as peaceful as possible- </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="list-section mb-80">
+        @@include('_toNextSection.html')
+        @@loop('_maskWave.html', [
+          {'positionClass':'maskWave-top'}
+        ])
+
+        <div class="list-section_content">
+          <div class="container">
+            <div class="row">
+              <div class="col-2 d-none d-lg-block">
+                <div class="list-section_img left"  data-speed="0.7">
+                  <img src="images/membership/img-2.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                @@include('_number-list.html')
+              </div>
+              <div class="col-2 align-items-end d-none d-lg-flex" data-speed="1.3" >
+                <div class="list-section_img right">
+                  <img src="images/membership/img-2.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        @@loop('_maskWave.html', [
+          {'positionClass':'maskWave-bottom'}
+        ])
+      </section>
+
+      <section class="info info-v2 mb-150" id="firstSection">
+        <div class="container">
+          <div class="row mb-80 align-items-center">
+            <div class="col-12">
+              <div class="info_box text-center">
+                <div class="info_content">
+                  <div class="info_content__title h3 text-uppercase">The membership committee
+                    ensures the rules are adhered
+                    to at all times</div>
+                  <div class="info_content__text">They have sole discretion as to who is accepted into the membership scheme. </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <img src="images/icons/footer-icon-2.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      @@include('_formSection.html')
+
+    </main>
+
+
+      @@loop('_footer.html', [
+      {'icon':'images/icons/footer-icon.jpg'}
+      ])
+  </div>
+</div>
+
+@@include('_callBack.html')
+@@include('_cookies.html')
+@@include('_modal-callBackForm.html')
+@@include('_modal-sendModal.html')
+
+
+

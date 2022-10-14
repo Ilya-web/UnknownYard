@@ -1,0 +1,21 @@
+@import "variables";
+
+$transition-time: 0.3s;
+
+@mixin transition {
+  transition: all ease 0.3s;
+}
+
+@mixin reset-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin gapTop ($mt) {
+  margin-top:- $mt;
+  &>[class^='col-'] {
+    margin-top: $mt;
+  }
+}
+

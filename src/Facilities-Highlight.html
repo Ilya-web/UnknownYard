@@ -1,0 +1,355 @@
+@@include('_head.html')
+
+
+@@include('_header.html')
+<div class="wrapper scroll-container" id="wrapper">
+  <div class="content" id="content">
+    <main class="main">
+      <div class="scenery-5">
+        <img src="images/scenery/img-5.jpg" alt="">
+      </div>
+      <div class="scenery-6">
+        <img src="images/scenery/img-4.jpg" alt="">
+      </div>
+
+      <section class="main-section mb-150">
+        <div class="container">
+          <div class="row mb-3">
+            <div class="col-11 offset-lg-1">
+              <h2 class="h1 text-uppercase">Facilities &</h2>
+            </div>
+            <div class="col-11 offset-1 col-md-7 offset-md-5">
+              <h2 class="h1 text-uppercase">Highlights</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-11 offset-1 col-md-4 offset-md-5">
+              <p>Upon arrival to Unknown Yard we are sure that you will want to close yourselves away within the privacy of one of our eleven undisturbed rooms. Yet you can’t ignore the fact that we are more than just a boutique hotel.
+              </p>
+              <p>Our other facilities include an exclusive spa, lounge, summertime terrace and a quiet cafe serving exceptional coffee.</p>
+
+            </div>
+          </div>
+        </div>
+        @@loop('_imageMask.html', [
+        {'urlImage':'images/main-img.jpg'}
+        ])
+      </section>
+
+      <section class="mb-150 facilitiesHighlight" id="firstSection">
+        <div class="scenery-7">
+          <img src="images/scenery/img-7.jpg" alt="">
+        </div>
+        <div class="facilitiesHighlight-box">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <ul class="nav facilitiesHighlight-nav" role="tablist">
+                  <li class="nav-item facilitiesHighlight-nav_item" role="presentation">
+                    <button class="facilitiesHighlight-nav_link active" id="cafe-tab" data-bs-toggle="pill" data-bs-target="#cafe" type="button" role="tab" aria-controls="cafe" aria-selected="true">Cafe</button>
+                  </li>
+                  <li class="nav-item facilitiesHighlight-nav_item" role="presentation">
+                    <button class="facilitiesHighlight-nav_link" id="spa-tab" data-bs-toggle="pill" data-bs-target="#spa" type="button" role="tab" aria-controls="spa" aria-selected="false">SPA</button>
+                  </li>
+                  <li class="nav-item facilitiesHighlight-nav_item" role="presentation">
+                    <button class="facilitiesHighlight-nav_link" id="terrace-tab" data-bs-toggle="pill" data-bs-target="#terrace" type="button" role="tab" aria-controls="terrace" aria-selected="false">Terrace</button>
+                  </li>
+                  <li class="nav-item facilitiesHighlight-nav_item" role="presentation">
+                    <button class="facilitiesHighlight-nav_link" id="rooms-tab" data-bs-toggle="pill" data-bs-target="#rooms" type="button" role="tab" aria-controls="rooms" aria-selected="false">ROOMS</button>
+                  </li>
+
+                </ul>
+                <div class="tab-content facilitiesHighlight-content" id="pills-tabContent">
+                  <div class="facilitiesHighlight-img" data-speed="1.5">
+                    <img src="images/scenery/img-10.jpg" alt="">
+                  </div>
+                  <div class="tab-pane fade show active" id="cafe" role="tabpanel" aria-labelledby="cafe-tab" tabindex="0">
+                    <div class="row mb-80">
+                      <div class="col-md-6 m-auto text-center">
+                        <div class="h1 text-uppercase mb-2">Cafe</div>
+                        <div class="facilitiesHighlight-content_subTitle text-uppercase">Season Openings</div>
+                        <div>
+                          Yes, you are in the hub of the city, but once within the boundaries of Unknown Yard you would never know it. Breathe in the fresh air, soak up the vitamin D and listen to the sounds of summer on our secluded terrace. Natural foliage provides a hug of freshness within the concrete jungle of Berlin. A private paradise that welcomes the noise of nature as much as it does our very important guests.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="swiper facilitiesHighlight-slider">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <a href="images/facilitiesHighlight-slider/img-3-1.jpg" class="zoom-icon" data-fancybox="gallery-cafe">
+                                <img src="images/facilitiesHighlight-slider/img-3.jpg" alt="">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="images/facilitiesHighlight-slider/img-4-1.jpg" class="zoom-icon" data-fancybox="gallery-cafe">
+                                <img src="images/facilitiesHighlight-slider/img-4.jpg" alt="">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="images/facilitiesHighlight-slider/img-3-1.jpg" class="zoom-icon" data-fancybox="gallery-cafe">
+                                <img src="images/facilitiesHighlight-slider/img-3.jpg" alt="">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="images/facilitiesHighlight-slider/img-4-1.jpg" class="zoom-icon" data-fancybox="gallery-cafe">
+                                <img src="images/facilitiesHighlight-slider/img-4.jpg" alt="">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                          <div class="facilitiesHighlight-prev">
+                            <svg width="88" height="90" viewBox="0 0 88 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="44" cy="45" r="43.5" transform="rotate(-180 44 45)" stroke="#A0862F"/>
+                              <circle cx="44.5" cy="88.5" r="1.5" transform="rotate(-180 44.5 88.5)" fill="#A0862F"/>
+                              <circle cx="44.5" cy="1.5" r="1.5" transform="rotate(-180 44.5 1.5)" fill="#A0862F"/>
+                              <path d="M16 45L71 45" stroke="#A0862F"/>
+                              <path d="M38 49L32 45L38 41" stroke="#A0862F"/>
+                              <path d="M24 55L16 45L24 35" stroke="#A0862F"/>
+                              <path d="M28 37L21 39L21 32" stroke="#A0862F"/>
+                              <path d="M28 53L21 51L21 58" stroke="#A0862F"/>
+                            </svg>
+                          </div>
+                          <div class="facilitiesHighlight-next">
+                            <svg width="88" height="90" viewBox="0 0 88 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="44" cy="45" r="43.5" stroke="#A0862F"/>
+                              <circle cx="43.5" cy="1.5" r="1.5" fill="#A0862F"/>
+                              <circle cx="43.5" cy="88.5" r="1.5" fill="#A0862F"/>
+                              <path d="M72 45H17" stroke="#A0862F"/>
+                              <path d="M50 41L56 45L50 49" stroke="#A0862F"/>
+                              <path d="M64 35L72 45L64 55" stroke="#A0862F"/>
+                              <path d="M60 53L67 51V58" stroke="#A0862F"/>
+                              <path d="M60 37L67 39V32" stroke="#A0862F"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="spa" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+                    <div class="row mb-80">
+                      <div class="col-md-6 m-auto text-center">
+                        <div class="h1 text-uppercase mb-2">Spa</div>
+                        <div class="facilitiesHighlight-content_subTitle text-uppercase">Season Openings</div>
+                        <div>
+                          Yes, you are in the hub of the city, but once within the boundaries of Unknown Yard you would never know it. Breathe in the fresh air, soak up the vitamin D and listen to the sounds of summer on our secluded terrace. Natural foliage provides a hug of freshness within the concrete jungle of Berlin. A private paradise that welcomes the noise of nature as much as it does our very important guests.
+                        </div>
+                      </div>
+                    </div>
+
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="swiper facilitiesHighlight-slider">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <a href="images/facilitiesHighlight-slider/img-3-1.jpg" class="zoom-icon" data-fancybox="gallery-spa">
+                                    <img src="images/facilitiesHighlight-slider/img-3.jpg" alt="">
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="images/facilitiesHighlight-slider/img-4-1.jpg" class="zoom-icon" data-fancybox="gallery-spa">
+                                    <img src="images/facilitiesHighlight-slider/img-4.jpg" alt="">
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="images/facilitiesHighlight-slider/img-3-1.jpg" class="zoom-icon" data-fancybox="gallery-spa">
+                                    <img src="images/facilitiesHighlight-slider/img-3.jpg" alt="">
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="images/facilitiesHighlight-slider/img-4-1.jpg" class="zoom-icon" data-fancybox="gallery-spa">
+                                    <img src="images/facilitiesHighlight-slider/img-4.jpg" alt="">
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="swiper-pagination"></div>
+                              <div class="facilitiesHighlight-prev">
+                                <svg width="88" height="90" viewBox="0 0 88 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <circle cx="44" cy="45" r="43.5" transform="rotate(-180 44 45)" stroke="#A0862F"/>
+                                  <circle cx="44.5" cy="88.5" r="1.5" transform="rotate(-180 44.5 88.5)" fill="#A0862F"/>
+                                  <circle cx="44.5" cy="1.5" r="1.5" transform="rotate(-180 44.5 1.5)" fill="#A0862F"/>
+                                  <path d="M16 45L71 45" stroke="#A0862F"/>
+                                  <path d="M38 49L32 45L38 41" stroke="#A0862F"/>
+                                  <path d="M24 55L16 45L24 35" stroke="#A0862F"/>
+                                  <path d="M28 37L21 39L21 32" stroke="#A0862F"/>
+                                  <path d="M28 53L21 51L21 58" stroke="#A0862F"/>
+                                </svg>
+                              </div>
+                              <div class="facilitiesHighlight-next">
+                                <svg width="88" height="90" viewBox="0 0 88 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <circle cx="44" cy="45" r="43.5" stroke="#A0862F"/>
+                                  <circle cx="43.5" cy="1.5" r="1.5" fill="#A0862F"/>
+                                  <circle cx="43.5" cy="88.5" r="1.5" fill="#A0862F"/>
+                                  <path d="M72 45H17" stroke="#A0862F"/>
+                                  <path d="M50 41L56 45L50 49" stroke="#A0862F"/>
+                                  <path d="M64 35L72 45L64 55" stroke="#A0862F"/>
+                                  <path d="M60 53L67 51V58" stroke="#A0862F"/>
+                                  <path d="M60 37L67 39V32" stroke="#A0862F"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="tab-pane fade" id="terrace" role="tabpanel" aria-labelledby="terrace-tab" tabindex="0">
+
+                    <div class="row mb-80">
+                      <div class="col-md-6 m-auto text-center">
+                        <div class="h1 text-uppercase mb-2">terrace</div>
+                        <div class="facilitiesHighlight-content_subTitle text-uppercase">Season Openings</div>
+                        <div>
+                          Yes, you are in the hub of the city, but once within the boundaries of Unknown Yard you would never know it. Breathe in the fresh air, soak up the vitamin D and listen to the sounds of summer on our secluded terrace. Natural foliage provides a hug of freshness within the concrete jungle of Berlin. A private paradise that welcomes the noise of nature as much as it does our very important guests.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="swiper facilitiesHighlight-slider">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <a href="images/facilitiesHighlight-slider/img-3-1.jpg" class="zoom-icon" data-fancybox="gallery-terrace">
+                                <img src="images/facilitiesHighlight-slider/img-3.jpg" alt="">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="images/facilitiesHighlight-slider/img-4-1.jpg" class="zoom-icon" data-fancybox="gallery-terrace">
+                                <img src="images/facilitiesHighlight-slider/img-4.jpg" alt="">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="images/facilitiesHighlight-slider/img-3-1.jpg" class="zoom-icon" data-fancybox="gallery-terrace">
+                                <img src="images/facilitiesHighlight-slider/img-3.jpg" alt="">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="images/facilitiesHighlight-slider/img-4-1.jpg" class="zoom-icon" data-fancybox="gallery-terrace">
+                                <img src="images/facilitiesHighlight-slider/img-4.jpg" alt="">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                          <div class="facilitiesHighlight-prev">
+                            <svg width="88" height="90" viewBox="0 0 88 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="44" cy="45" r="43.5" transform="rotate(-180 44 45)" stroke="#A0862F"/>
+                              <circle cx="44.5" cy="88.5" r="1.5" transform="rotate(-180 44.5 88.5)" fill="#A0862F"/>
+                              <circle cx="44.5" cy="1.5" r="1.5" transform="rotate(-180 44.5 1.5)" fill="#A0862F"/>
+                              <path d="M16 45L71 45" stroke="#A0862F"/>
+                              <path d="M38 49L32 45L38 41" stroke="#A0862F"/>
+                              <path d="M24 55L16 45L24 35" stroke="#A0862F"/>
+                              <path d="M28 37L21 39L21 32" stroke="#A0862F"/>
+                              <path d="M28 53L21 51L21 58" stroke="#A0862F"/>
+                            </svg>
+                          </div>
+                          <div class="facilitiesHighlight-next">
+                            <svg width="88" height="90" viewBox="0 0 88 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="44" cy="45" r="43.5" stroke="#A0862F"/>
+                              <circle cx="43.5" cy="1.5" r="1.5" fill="#A0862F"/>
+                              <circle cx="43.5" cy="88.5" r="1.5" fill="#A0862F"/>
+                              <path d="M72 45H17" stroke="#A0862F"/>
+                              <path d="M50 41L56 45L50 49" stroke="#A0862F"/>
+                              <path d="M64 35L72 45L64 55" stroke="#A0862F"/>
+                              <path d="M60 53L67 51V58" stroke="#A0862F"/>
+                              <path d="M60 37L67 39V32" stroke="#A0862F"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="tab-pane fade" id="rooms" role="tabpanel" aria-labelledby="rooms-tab" tabindex="0">
+                    <div class="row mb-80">
+                      <div class="col-md-6 m-auto text-center">
+                        <div class="h1 text-uppercase mb-2">ROOMS</div>
+                        <div class="facilitiesHighlight-content_subTitle text-uppercase">Season Openings</div>
+                        <div>
+                          Yes, you are in the hub of the city, but once within the boundaries of Unknown Yard you would never know it. Breathe in the fresh air, soak up the vitamin D and listen to the sounds of summer on our secluded terrace. Natural foliage provides a hug of freshness within the concrete jungle of Berlin. A private paradise that welcomes the noise of nature as much as it does our very important guests.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="swiper facilitiesHighlight-slider">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <a href="images/facilitiesHighlight-slider/img-3-1.jpg" class="zoom-icon" data-fancybox="gallery-rterrace">
+                                <img src="images/facilitiesHighlight-slider/img-3.jpg" alt="">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="images/facilitiesHighlight-slider/img-4-1.jpg" class="zoom-icon" data-fancybox="gallery-rterrace">
+                                <img src="images/facilitiesHighlight-slider/img-4.jpg" alt="">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="images/facilitiesHighlight-slider/img-3-1.jpg" class="zoom-icon" data-fancybox="gallery-rterrace">
+                                <img src="images/facilitiesHighlight-slider/img-3.jpg" alt="">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="images/facilitiesHighlight-slider/img-4-1.jpg" class="zoom-icon" data-fancybox="gallery-rterrace">
+                                <img src="images/facilitiesHighlight-slider/img-4.jpg" alt="">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                          <div class="facilitiesHighlight-prev">
+                            <svg width="88" height="90" viewBox="0 0 88 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="44" cy="45" r="43.5" transform="rotate(-180 44 45)" stroke="#A0862F"/>
+                              <circle cx="44.5" cy="88.5" r="1.5" transform="rotate(-180 44.5 88.5)" fill="#A0862F"/>
+                              <circle cx="44.5" cy="1.5" r="1.5" transform="rotate(-180 44.5 1.5)" fill="#A0862F"/>
+                              <path d="M16 45L71 45" stroke="#A0862F"/>
+                              <path d="M38 49L32 45L38 41" stroke="#A0862F"/>
+                              <path d="M24 55L16 45L24 35" stroke="#A0862F"/>
+                              <path d="M28 37L21 39L21 32" stroke="#A0862F"/>
+                              <path d="M28 53L21 51L21 58" stroke="#A0862F"/>
+                            </svg>
+                          </div>
+                          <div class="facilitiesHighlight-next">
+                            <svg width="88" height="90" viewBox="0 0 88 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="44" cy="45" r="43.5" stroke="#A0862F"/>
+                              <circle cx="43.5" cy="1.5" r="1.5" fill="#A0862F"/>
+                              <circle cx="43.5" cy="88.5" r="1.5" fill="#A0862F"/>
+                              <path d="M72 45H17" stroke="#A0862F"/>
+                              <path d="M50 41L56 45L50 49" stroke="#A0862F"/>
+                              <path d="M64 35L72 45L64 55" stroke="#A0862F"/>
+                              <path d="M60 53L67 51V58" stroke="#A0862F"/>
+                              <path d="M60 37L67 39V32" stroke="#A0862F"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          @@include('_scenery-4.html')
+          @@include('_scenery-3.html')
+        </div>
+
+      </section>
+
+      @@include('_formSection.html')
+
+    </main>
+
+    @@loop('_footer.html', [
+    {'icon':'images/icons/footer-icon.jpg'}
+    ])
+  </div>
+</div>
+
+@@include('_callBack.html')
+@@include('_cookies.html')
+@@include('_modal-callBackForm.html')
+@@include('_modal-sendModal.html')
+
+
+
