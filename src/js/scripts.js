@@ -28,6 +28,7 @@ $(document).ready(()=>{
         itemSelector: '.blog-item',
         percentPosition: true,
       });
+      ScrollTrigger.refresh()
     },200)
   }
 
